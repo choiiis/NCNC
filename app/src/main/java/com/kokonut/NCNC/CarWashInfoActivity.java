@@ -13,7 +13,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class CarWashInfoActivity extends AppCompatActivity {
-    Toolbar tb;
     ImageView ivBack, ivOnButton, ivOnButton2, ivOnButton3;
 
     public static final int sub = 1001;
