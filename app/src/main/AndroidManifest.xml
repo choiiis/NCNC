@@ -11,7 +11,7 @@
 
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
-            android:value="frq2tpnvu5" />
+            android:value="CLIENT_ID" />
 
         <activity
             android:name=".CarWashInfoActivity"
