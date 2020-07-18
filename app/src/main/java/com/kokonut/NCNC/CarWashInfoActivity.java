@@ -32,11 +32,7 @@ public class CarWashInfoActivity extends AppCompatActivity {
         });
 
     }
-
-    protected void onPause() {
-        super.onPause();
-        finish();
-    }
+    
 
 
     void initView(){
