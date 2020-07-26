@@ -3,13 +3,16 @@ package com.kokonut.NCNC;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.naver.maps.geometry.LatLng;
 import com.naver.maps.map.MapView;
 import com.naver.maps.map.NaverMap;
@@ -17,10 +20,12 @@ import com.naver.maps.map.OnMapReadyCallback;
 import com.naver.maps.map.overlay.Marker;
 import com.naver.maps.map.overlay.OverlayImage;
 
-public class MapActivity extends Activity implements OnMapReadyCallback {
+public class MapActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private MapView mapView;
     LinearLayout llMoreInfo;
+    BottomNavigationView bottomNavigation;
+
 
     public static final int sub = 1001;
 
@@ -28,6 +33,7 @@ public class MapActivity extends Activity implements OnMapReadyCallback {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
+        bottomNavigation = findViewById(R.id.bottom_navigation_bar);
         initView();
 
         mapView = findViewById(R.id.map_view);
@@ -83,4 +89,5 @@ public class MapActivity extends Activity implements OnMapReadyCallback {
     void initView(){
         llMoreInfo = findViewById(R.id.map_more_info);
     }
+
 }

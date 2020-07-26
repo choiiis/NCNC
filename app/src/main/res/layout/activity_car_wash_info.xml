@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_push_alarm"
@@ -149,6 +150,7 @@
                     android:text="4.8"/>
 
                 <ImageView
+                    android:id="@+id/car_wash_info_review_box"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -183,7 +185,7 @@
                         android:textSize="8sp"
                         android:textColor="#7a7a81"
                         android:gravity="center_horizontal"
-                        tools:text="전화"/>
+                        android:text="전화"/>
 
                 </LinearLayout>
 
@@ -214,7 +216,7 @@
                         android:textSize="8sp"
                         android:textColor="#7a7a81"
                         android:gravity="center_horizontal"
-                        tools:text="공유"/>
+                        android:text="공유"/>
 
                 </LinearLayout>
 
@@ -246,7 +248,7 @@
                         android:textSize="8sp"
                         android:textColor="#7a7a81"
                         android:gravity="center_horizontal"
-                        tools:text="즐겨찾기"/>
+                        android:text="즐겨찾기"/>
 
                 </LinearLayout>
 
@@ -277,7 +279,7 @@
                         android:textSize="8sp"
                         android:textColor="#7a7a81"
                         android:gravity="center_horizontal"
-                        tools:text="지도"/>
+                        android:text="지도"/>
 
                 </LinearLayout>
 
@@ -287,7 +289,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="50dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -313,7 +315,7 @@
                     android:layout_marginTop="12dp"
                     android:textSize="13sp"
                     android:textColor="#000000"
-                    tools:text="범계역 3번 출구에서 82m"/>
+                    android:text="범계역 3번 출구에서 82m"/>
 
             </LinearLayout>
 
@@ -354,7 +356,7 @@
                     android:layout_marginTop="6dp"
                     android:textSize="13sp"
                     android:textColor="#000000"
-                    tools:text="주말 10:00 ~ 21:00"/>
+                    android:text="주말 10:00 ~ 21:00"/>
             </LinearLayout>
             <View
                 android:layout_width="310dp"
@@ -480,7 +482,7 @@
                     android:layout_marginTop="6dp"
                     android:textSize="13sp"
                     android:textColor="#000000"
-                    tools:text="카샴푸 20% 세일 행사"/>
+                    android:text="카샴푸 20% 세일 행사"/>
             </LinearLayout>
             <View
                 android:layout_width="310dp"
@@ -519,7 +521,7 @@
                     android:layout_marginTop="6dp"
                     android:textSize="13sp"
                     android:textColor="#000000"
-                    tools:text="하부세차"/>
+                    android:text="하부세차"/>
             </LinearLayout>
             <View
                 android:layout_width="310dp"
