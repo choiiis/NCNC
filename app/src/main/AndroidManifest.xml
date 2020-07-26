@@ -14,22 +14,22 @@
             android:value="CLIENT_ID_HERE" />
 
         <activity
-            android:name=".CarWashInfoActivity"
+            android:name=".Map.CarWashInfoActivity"
             android:label="CarWashInfo">
         </activity>
 
         <activity
-            android:name=".CarWashReviewActivity"
+            android:name=".Map.CarWashReviewActivity"
             android:label="CarWashReview">
         </activity>
 
         <activity
-            android:name=".WriteReviewActivity"
+            android:name=".Map.WriteReviewActivity"
             android:label="WriteReview">
         </activity>
 
         <activity
-            android:name=".MapActivity"
+            android:name=".Map.MapActivity"
             android:label="Map">
         </activity>
 

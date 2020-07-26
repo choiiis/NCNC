@@ -3,6 +3,12 @@ package com.kokonut.NCNC;
 import android.os.Bundle;
 import android.view.MenuItem;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.kokonut.NCNC.Calendar.CalendarFragment;
+import com.kokonut.NCNC.Cast.CastFragment;
+import com.kokonut.NCNC.Home.HomeFragment;
+import com.kokonut.NCNC.Map.MapFragment;
+import com.kokonut.NCNC.MyPage.MypageFragment;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
