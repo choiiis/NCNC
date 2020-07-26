@@ -1,4 +1,4 @@
-package com.kokonut.NCNC;
+package com.kokonut.NCNC.Map;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,29 +8,32 @@ import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CarWashReviewActivity extends AppCompatActivity {
-    ImageView ivBack, ivWriteReview;
+import com.kokonut.NCNC.Map.CarWashReviewActivity;
+import com.kokonut.NCNC.R;
+
+public class WriteReviewActivity extends AppCompatActivity {
+    ImageView ivBack, ivCommitReview;
 
     public static final int sub = 1001;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_car_wash_review);
+        setContentView(R.layout.activity_write_review);
         initView();
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CarWashInfoActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CarWashReviewActivity.class);
                 startActivityForResult(intent, sub);
             }
         });
 
-        ivWriteReview.setOnClickListener(new View.OnClickListener() {
+        ivCommitReview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), WriteReviewActivity.class);
+                Intent intent = new Intent(getApplicationContext(), CarWashReviewActivity.class);
                 startActivityForResult(intent, sub);
             }
         });
@@ -44,8 +47,8 @@ public class CarWashReviewActivity extends AppCompatActivity {
 
 
     void initView(){
-        ivBack = findViewById(R.id.car_wash_review_back_arrow);
-        ivWriteReview = findViewById(R.id.car_wash_review_write_button);
+        ivBack = findViewById(R.id.write_review_back_arrow);
+        ivCommitReview = findViewById(R.id.write_review_commit_button);
 
     }
 }

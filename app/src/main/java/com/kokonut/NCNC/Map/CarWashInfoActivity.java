@@ -1,4 +1,4 @@
-package com.kokonut.NCNC;
+package com.kokonut.NCNC.Map;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,26 +8,28 @@ import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class WriteReviewActivity extends AppCompatActivity {
-    ImageView ivBack, ivCommitReview;
+import com.kokonut.NCNC.R;
+
+public class CarWashInfoActivity extends AppCompatActivity {
+    ImageView ivBack, ivOnButton, ivOnButton2, ivOnButton3, ivReview;
 
     public static final int sub = 1001;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_write_review);
+        setContentView(R.layout.activity_car_wash_info);
         initView();
 
         ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), CarWashReviewActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MapActivity.class);
                 startActivityForResult(intent, sub);
             }
         });
 
-        ivCommitReview.setOnClickListener(new View.OnClickListener() {
+        ivReview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), CarWashReviewActivity.class);
@@ -36,16 +38,11 @@ public class WriteReviewActivity extends AppCompatActivity {
         });
 
     }
-
-    protected void onPause() {
-        super.onPause();
-        finish();
-    }
+    
 
 
     void initView(){
-        ivBack = findViewById(R.id.write_review_back_arrow);
-        ivCommitReview = findViewById(R.id.write_review_commit_button);
-
+        ivBack = findViewById(R.id.car_wash_info_back_arrow);
+        ivReview = findViewById(R.id.car_wash_info_review_box);
     }
 }
