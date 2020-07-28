@@ -26,7 +26,7 @@ public class Calendar_PopupFragment extends DialogFragment {
     ImageButton buttonAdd;
     Context context;
 
-    int a;
+    int a; int b;
 
     public interface uploadDialogInterface
     {
