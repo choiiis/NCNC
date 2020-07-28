@@ -1,7 +1,14 @@
 package com.kokonut.NCNC;
 
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.TypedValue;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.kokonut.NCNC.Calendar.CalendarFragment;
 import com.kokonut.NCNC.Cast.CastFragment;
@@ -28,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         bottomNavigationBar = findViewById(R.id.bottom_navigation_bar);
+        BottomNavigationMenuView menuView = (BottomNavigationMenuView) bottomNavigationBar.getChildAt(0);
+
+        for (int i = 0; i < menuView.getChildCount(); i++) {
+            final View iconView = menuView.getChildAt(i).findViewById(R.id.icon);
+            final ViewGroup.LayoutParams layoutParams = iconView.getLayoutParams();
+            iconView.setLayoutParams(layoutParams);
+
+        }
 
         homeFragment = new HomeFragment();
         calendarFragment = new CalendarFragment();

@@ -16,7 +16,7 @@
         android:id="@+id/tab3"
         android:icon="@drawable/ic_tap3_gray"
         android:enabled="true"
-        android:title="내 주변 세차장"/>
+        android:title="주변 세차장"/>
 
     <item
         android:id="@+id/tab4"
