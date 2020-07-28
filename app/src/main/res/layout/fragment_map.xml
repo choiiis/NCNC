@@ -13,21 +13,7 @@
 <!--        android:gravity="center"-->
 <!--        android:text="map" />-->
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_push_alarm"
-        android:layout_width="match_parent"
-        android:layout_height="47dp"
-        android:layout_gravity="center"
-        android:background="@drawable/upper_tab">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            android:layout_marginLeft="141dp"
-            android:background="@drawable/main_logo">
-        </ImageView>
-    </androidx.appcompat.widget.Toolbar>
 
     <FrameLayout
         android:layout_width="match_parent"
