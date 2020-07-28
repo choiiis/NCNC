@@ -2,6 +2,7 @@ package com.kokonut.NCNC;
 
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.kokonut.NCNC.Calendar.CalendarFragment;
+import com.kokonut.NCNC.Calendar.Calendar_PopupFragment;
 import com.kokonut.NCNC.Cast.CastFragment;
 import com.kokonut.NCNC.Home.HomeFragment;
 import com.kokonut.NCNC.Map.MapFragment;
@@ -18,8 +20,9 @@ import com.kokonut.NCNC.MyPage.MypageFragment;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Calendar_PopupFragment.uploadDialogInterface{
 
     HomeFragment homeFragment;
     CalendarFragment calendarFragment;
@@ -41,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
             final View iconView = menuView.getChildAt(i).findViewById(R.id.icon);
             final ViewGroup.LayoutParams layoutParams = iconView.getLayoutParams();
             iconView.setLayoutParams(layoutParams);
-
         }
 
         homeFragment = new HomeFragment();
@@ -82,5 +84,10 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+    }
+
+    @Override
+    public void senddatatoCalendarFragment(String popupResult) {
+        calendarFragment.devidepopupValue(popupResult);
     }
 }
