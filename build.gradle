@@ -22,10 +22,9 @@ allprojects {
         jcenter()
 
         // 네이버 지도 저장소
-        maven {
-            url 'https://navercorp.bintray.com/maps'
-        }
-        
+        maven { url 'https://navercorp.bintray.com/maps'}
+        //캘린더뷰
+        maven { url 'https://jitpack.io' }
     }
 }
 
