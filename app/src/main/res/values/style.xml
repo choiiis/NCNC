@@ -5,6 +5,10 @@
         <item name="colorPrimary">@color/color_white</item>
         <item name="colorPrimaryDark">@color/color_white</item>
         <item name="colorAccent">@color/color_main</item>
+
+        <!-- Status Bar -->
+        <item name="android:statusBarColor">@color/color_white</item>
+        <item name="android:windowLightStatusBar">true</item>
     </style>
     <style name="BottomNavigationView" parent="@style/TextAppearance.AppCompat.Caption">
         <item name="android:textSize">10sp</item>
